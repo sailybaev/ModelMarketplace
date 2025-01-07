@@ -1,0 +1,39 @@
+// filepath: /src/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Marketplace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Model Marketplace</h1>
+        <div id="wallet-status">
+            <button id="connect-wallet">Connect Wallet</button>
+            <span id="wallet-address"></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="model-list">
+            <h2>Available Models</h2>
+            <div id="models-container"></div>
+        </section>
+
+        <section id="submit-model">
+            <h2>Submit New Model</h2>
+            <form id="model-form">
+                <input type="text" id="model-name" placeholder="Model Name" required>
+                <input type="text" id="model-description" placeholder="Description" required>
+                <input type="number" id="model-price" placeholder="Price (ETH)" required>
+                <button type="submit">Submit Model</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
